@@ -8,9 +8,9 @@
         public int StartYear { get; set; }
         public string? EndYear { get; set; }
         public string Company { get; set; }
-        public String City { get; set; }
+        public string City { get; set; }
 
-        public String Description { get; set; }
+        public string Description { get; set; }
 
     }
 }

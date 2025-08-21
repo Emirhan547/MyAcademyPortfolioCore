@@ -7,7 +7,7 @@ namespace Portfolio.Web.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=Emirhann\\SQLEXPRESS;database=MyAcademyPortfolioDb; integrated security=true; trustServerCertificate=true");
+            optionsBuilder.UseSqlServer("server=localhost\\SQLEXPRESS;database=MyAcademyPortfolioDb; integrated security=true; trustServerCertificate=true");
         }
         public DbSet <About> Abouts { get; set; }
         public DbSet<Banner> Banners { get; set; }
@@ -18,6 +18,11 @@ namespace Portfolio.Web.Context
 
         public DbSet<Experience> Experiences { get; set; }
         public DbSet<Project> Projects { get; set; }
+        public DbSet<Skill> Skills { get; set; }
+        public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<ContactInfo> ContactInfos { get; set; }
+        public DbSet<UserMessage> UserMessages { get; set; }
+
 
     }
 }
