@@ -1,4 +1,4 @@
-# 1. Base image
+# Base image
 FROM mcr.microsoft.com/dotnet/aspnet:9.0.8 AS base
 WORKDIR /app
 EXPOSE 5000

@@ -1,0 +1,40 @@
+﻿@model Testimonial
+@{
+    ViewData["Title"] = "Referans Güncelle";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Update Testimonial</h2>
+
+<form method="post" asp-action="UpdateTestimonial" asp-controller="Testimonial">
+    <input type="hidden" asp-for="TestimonialId" />
+
+    <div class="form-group">
+        <label>İsim</label>
+        <input type="text" asp-for="Name" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Başlık</label>
+        <input type="text" asp-for="Title" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Resim Url</label>
+        <input type="text" asp-for="ImageUrl" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Yorum</label>
+        <textarea asp-for="Comment" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Değerlendirme (1-5)</label>
+        <input type="number" asp-for="Review" min="1" max="5" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Güncelle</button>
+    <a asp-action="Index" class="btn btn-secondary">Listeye Dön</a>
+</form>
+

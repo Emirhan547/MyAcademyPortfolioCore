@@ -1,0 +1,31 @@
+﻿@model ContactInfo
+@{
+    ViewData["Title"] = "İletişim Güncelle";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>İletişim Bilgisi Güncelle</h2>
+
+<form asp-action="UpdateContactInfo" method="post">
+    <input type="hidden" asp-for="ContactInfoId" />
+
+    <div class="form-group mb-3">
+        <label>Adres</label>
+        <input asp-for="Address" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label>Telefon</label>
+        <input asp-for="PhoneNumber" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label>Harita URL</label>
+        <input asp-for="MapUrl" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+    <a asp-action="Index" class="btn btn-secondary">Listeye Dön</a>
+</form>
+

@@ -1,0 +1,9 @@
+﻿@model Education
+
+<h3 class="resume-title">Education</h3>
+<div class="resume-item">
+    <h4>@Model.SchoolName</h4>
+    <h5>@Model.Department</h5>
+    <p>@Model.StartYear - @(string.IsNullOrEmpty(Model.EndYear) ? "Present" : Model.EndYear)</p>
+    <p>@Model.Description</p>
+</div><!-- End Resume Item -->
