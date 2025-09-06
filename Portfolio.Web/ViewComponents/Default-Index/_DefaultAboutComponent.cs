@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Portfolio.Web.Context;
 
 namespace Portfolio.Web.ViewComponents.Default_Index
@@ -7,7 +8,8 @@ namespace Portfolio.Web.ViewComponents.Default_Index
     {
          public IViewComponentResult Invoke()
         {
-           return View();
+            var about = context.Abouts.FirstOrDefault(x => x.IsAvailable);
+            return View(about);
         }
     }
 }

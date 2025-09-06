@@ -1,0 +1,50 @@
+﻿@model About
+@{
+    ViewData["Title"] = "Hakkımda Ekle";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Yeni Hakkımda Bilgisi Ekle</h2>
+
+<form asp-action="AddAbout" method="post">
+    <div class="mb-3">
+        <label>Resim Url</label>
+        <input asp-for="ImageUrl" class="form-control" />
+    </div>
+    
+    <div class="mb-3">
+        <label>Doğum Tarihi</label>
+        <input asp-for="BirthDate" type="date" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Telefon</label>
+        <input asp-for="PhoneNumber" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Şehir</label>
+        <input asp-for="City" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Mezuniyet</label>
+        <input asp-for="Graduation" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Email</label>
+        <input asp-for="Email" type="email" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Başlık</label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Açıklama</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+ 
+    <div class="form-check mb-3">
+        <input asp-for="IsAvailable" class="form-check-input" />
+        <label class="form-check-label">Aktif mi?</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+    <a asp-action="Index" class="btn btn-secondary">Listeye Dön</a>
+</form>

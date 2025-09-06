@@ -11,9 +11,9 @@ namespace Portfolio.Web.Entities
         public string ProjectName { get; set; }
         [Required(ErrorMessage = "Açıklama boş geçilemez")]
         public string Description { get; set; }
-        [Required(ErrorMessage = "Proje Adı boş geçilemez")]
+        [Required(ErrorMessage = "Proje Görsel Url boş geçilemez")]
         public string ImageUrl { get; set; }
-        [Required(ErrorMessage = "Resim Adı boş geçilemez")]
+        [Required(ErrorMessage = "Github Url boş geçilemez")]
         public string GithubUrl { get; set; }
         [Required(ErrorMessage = "Kategori Boş bırakılamaz")]
         public int CategoryId{ get; set; }

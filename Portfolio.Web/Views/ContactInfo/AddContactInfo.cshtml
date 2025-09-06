@@ -1,0 +1,29 @@
+﻿@model ContactInfo
+@{
+    ViewData["Title"] = "İletişim Ekle";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Yeni İletişim Bilgisi Ekle</h2>
+
+<form asp-action="AddContactInfo" method="post">
+    <div class="form-group mb-3">
+        <label>Adres</label>
+        <input asp-for="Address" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label>Telefon</label>
+        <input asp-for="PhoneNumber" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label>Harita URL</label>
+        <input asp-for="MapUrl" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Kaydet</button>
+    <a asp-action="Index" class="btn btn-secondary">Geri</a>
+</form>
+

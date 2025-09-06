@@ -7,12 +7,13 @@
 
 <table class="table table-bordered table-hover">
     <tr>
+        <th>#</th>
         <th>Proje Resmi</th>
         <th>Proje Adı</th>
         <th>Proje Açıklaması</th>
         <th>Github Url</th>
         <th>Kategori</th>
-        <th>İklemler</th>
+        <th>İşlemler</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -32,7 +33,7 @@
     }
 </table>
 
-<a href="/Project/CreateProject" class="btn btn-outline-primary">Yeni Proje Oluştur</a>
+<a href="/Project/CreateProject" class="btn btn-outline-primary">Yeni Proje Ekle</a>
     <script>
         function deleteProject(id)
         {

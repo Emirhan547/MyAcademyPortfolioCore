@@ -9,6 +9,7 @@ namespace Portfolio.Web.Context
         {
             optionsBuilder.UseSqlServer("server=localhost\\SQLEXPRESS;database=MyAcademyPortfolioDb; integrated security=true; trustServerCertificate=true");
         }
+
         public DbSet <About> Abouts { get; set; }
         public DbSet<Banner> Banners { get; set; }
 
@@ -22,6 +23,8 @@ namespace Portfolio.Web.Context
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<ContactInfo> ContactInfos { get; set; }
         public DbSet<UserMessage> UserMessages { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<SocialMedia> SocialMedias { get; set; }
 
 
     }

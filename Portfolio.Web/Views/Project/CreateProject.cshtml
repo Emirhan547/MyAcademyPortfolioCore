@@ -1,6 +1,6 @@
 ﻿@model Project
 @{
-    ViewData["Title"] = "Yeni Proje Oluştur";
+    ViewData["Title"] = "Proje Ekle";
     Layout = "~/Views/AdminLayout/Layout.cshtml";
 }
 
@@ -31,6 +31,6 @@
         <option disabled selected>Kategori Seçiniz</option>
         <span class="text-danger" asp-asp-validation-for="CategoryId"></span>
     </div>
-    <button class="btn btn-outline-primary">Kaydet</button>
+    <button class="btn btn-outline-primary" type="submit">Kaydet</button>
 </form>
 

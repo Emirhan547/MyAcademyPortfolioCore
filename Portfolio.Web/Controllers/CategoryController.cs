@@ -22,7 +22,7 @@ namespace Portfolio.Web.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult CreateCategory(Category category )
+        public IActionResult CreateCategory(Category category)
         {
             _context.Add(category);
             _context.SaveChanges();
