@@ -55,3 +55,8 @@ Amacımız, öğrendiklerimizi pekiştirirken **.NET 9.0 tabanlı dinamik bir Po
 - LINQ  
 
 ---
+
+<img width="1920" height="1080" alt="Ekran görüntüsü 2025-09-07 130239" src="https://github.com/user-attachments/assets/1b07655f-cafe-436c-8ee5-ec06a94234cd" />
+
+
+
